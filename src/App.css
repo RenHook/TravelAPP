@@ -1,5 +1,4 @@
-    <style>
-        /* --- CSS STYLES --- */
+/* --- CSS STYLES --- */
         :root {
             --primary: #E91E63;
             /* Mexican Pink */
@@ -22,6 +21,7 @@
             display: flex;
             justify-content: center;
             height: 100vh;
+            height: 100dvh;
             overflow: hidden;
         }
 
@@ -29,7 +29,8 @@
         #app-frame {
             width: 100%;
             max-width: 414px;
-            height: 100%;
+            height: 100vh;
+            height: 100dvh;
             background-color: var(--bg);
             position: relative;
             overflow: hidden;
@@ -1392,4 +1393,3 @@
         .media-btn.play-btn.playing { background:rgba(255,255,255,0.3); }
         .progress-container { height:5px; background:rgba(255,255,255,0.2); border-radius:3px; overflow:hidden; cursor:pointer; }
         .progress-bar { height:100%; width:0%; background:linear-gradient(90deg,#FFE0E6,#fff); border-radius:3px; transition:width 0.2s linear; }
-    </style>

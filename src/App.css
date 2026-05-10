@@ -20,23 +20,20 @@
             margin: 0;
             display: flex;
             justify-content: center;
-            height: 100vh;
-            height: 100dvh;
-            overflow: hidden;
+            min-height: 100dvh;
         }
 
         /* Mobile Phone Container Simulator */
         #app-frame {
             width: 100%;
             max-width: 414px;
-            height: 100vh;
-            height: 100dvh;
+            min-height: 100dvh;
             background-color: var(--bg);
             position: relative;
-            overflow: hidden;
             display: flex;
             flex-direction: column;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            align-self: flex-start;
         }
 
         /* Header */
@@ -50,6 +47,8 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            position: sticky;
+            top: 0;
         }
 
         header h1 {
@@ -88,14 +87,11 @@
             opacity: 0.8;
         }
 
-        /* Scrollable Content Area */
+        /* Content Area */
         #content-area {
             flex: 1;
-            overflow-y: auto;
             padding: 20px;
-            padding-bottom: 60px;
-            scroll-behavior: smooth;
-            -webkit-overflow-scrolling: touch;
+            padding-bottom: 40px;
         }
 
         
